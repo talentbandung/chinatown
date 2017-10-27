@@ -13,10 +13,14 @@ section{
 
 section.about{
   padding-top: 50px;
-  background-color: red;
+  background-color: rgb(209, 36, 36);
 }
 
 section.sejarah{
   padding-top: 50px;
-  background-color: blue;
+  background-color: #8585E9;
+}
+section.galeri{
+  padding-top: 50px;
+  background-color: #E63D9F;
 }
