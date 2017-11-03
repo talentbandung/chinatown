@@ -1,9 +1,3 @@
-body{
- -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
 p.footer{
   color: white;
   font-size: 10px;
@@ -12,8 +6,10 @@ p.footer{
 header.head{
   width: 100%;
   min-height: 700px;
- background-image: url(../foto/bg-cta.jpg);
- background-size: cover;
+  background-image: url(../foto/bg-cta.jpg);
+ background-size: 100%;
+ background-position: center center ;
+ background-repeat: no-repeat;
  overflow: hidden;
 }
 
