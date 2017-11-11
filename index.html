@@ -33,7 +33,10 @@
                 <a class="nav-link js-scroll-trigger" href="#history">History</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#galeri">Galeri</a>
+                <a class="nav-link js-scroll-trigger" href="#galeri">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#location">Location</a>
               </li>
             </ul>
           </div>
@@ -54,14 +57,14 @@
           <img class="img-fluid" src="foto/about.jpg" alt="about" style="padding-left: 10px;">
         </div>
         <div class="col-8">
-          <p>Our Story Begins In The East Preserving the history, we bring you to feel the good old China in the central of Bandung
-            city. Chinatown bandung a mini theme park with chinese town inspired. Constructed in the Chinese architectural
+          <p>Our Story Begins In The East Preserving the history, we bring you to feel the good old China in the central of
+            Bandung city. Chinatown bandung a mini theme park with chinese town inspired. Constructed in the Chinese architectural
             style, with so many photo spot you will love from traditional Paifang a Mandarin Chinese large red arch entrance
-            until the typical mini chinese garden. And here we also indulging you with various world culinary, authentic Chinese
-            and asian cuisine restaurants, playing ground and shopping can be found. A place that please everyone.</p>
-          </div>
+            until the typical mini chinese garden. And here we also indulging you with various world culinary, authentic
+            Chinese and asian cuisine restaurants, playing ground and shopping can be found. A place that please everyone.</p>
         </div>
       </div>
+    </div>
   </section>
 
   <section class="sejarah" id="history">
@@ -97,6 +100,42 @@
         <div class="col"><img class="img-fluid" src="foto/gambar1.jpg" alt="gbr6" width="500px" height="100px"></div>
       </div>
     </div>
+  </section> 
+  <!-- <section class="galeri" id="galeri">
+    <div class="container">
+      <h1>Galeri</h1>
+      <div class="row">
+        <div class="galeri">
+            <script src="//imageagram.com/js/imageagram.js"></script>
+            <iframe id="instimg-iframe" src="//imageagram.com/grid.php?q=h&search=tag:chinatownbandung&wt=in&s=150&h=6&w=2&b=no&c=&p=5&ho=fadeIn&sh=no&ww=450&as=on&at=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:936px" ></iframe>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section class="location" id="location">
+    <div class="container">
+      <h1>Location</h1>
+      <div id="map">
+      </div>
+      <script>
+        function initMap() {
+          var uluru = {
+            lat: -6.917083,
+            lng: 107.593231
+          };
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVeUNbrfMnCD402-n0qBesDFHwbxrMACA&callback=initMap" async
+        defer></script>
+    </div>
   </section>
 
   <div class="footer">
@@ -106,9 +145,9 @@
           <p class="footer  copy">&copy; 2017 ChinaTown Bandung. All Rights Reserved. <br> by @hanimaliah </p>
         </div>
         <div class="col-4">
-         <a href="https://www.instagram.com/chinatownbandung/"><img class="footer sosmed" src="foto/ig.png" alt="" width="50px"></a> 
-         <a href="https://twitter.com/chinatownbdg"><img class="footer sosmed" src="foto/twt.png" alt="" width="50px"></a>
-         <a href="https://www.facebook.com/chinatownbandung/"><img class="footer sosmed" src="foto/fb.png" alt="" width="50px"></a>
+          <a href="https://www.instagram.com/chinatownbandung/"><img class="footer sosmed" src="foto/ig.png" alt="" width="50px"></a>
+          <a href="https://twitter.com/chinatownbdg"><img class="footer sosmed" src="foto/twt.png" alt="" width="50px"></a>
+          <a href="https://www.facebook.com/chinatownbandung/"><img class="footer sosmed" src="foto/fb.png" alt="" width="50px"></a>
         </div>
         <div class="col-4">
           <img class="footer gambar " src="foto/Logo-Pemerintah.png" alt="" width="50px">
@@ -120,7 +159,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+
 </body>
 
 </html>
